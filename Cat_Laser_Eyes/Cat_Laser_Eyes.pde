@@ -20,12 +20,20 @@ void draw(){
   ellipse(x,y,125,125);
   fill(#FF0303);
   ellipse(x+225,y-125,125,125);
+  if(x>width){ 
+  background(catPic);
+  x = 425;
+  y = 625;
+  }
+ 
  
     
   
 }
 
 void keyPressed() {
+  
+  
   x++;
   
   y++;
